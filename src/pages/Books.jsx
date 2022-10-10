@@ -9,7 +9,7 @@ export const Books = () => {
     useEffect(()=>{
         const fetchAllBooks = async ()=>{
             try {
-                const res = await axios.get("https://online-mysql-heroku.herokuapp.com//books");
+                const res = await axios.get("https://online-mysql-heroku.herokuapp.com/books");
                 
                 setBooks(res.data);
             } catch (error) {
